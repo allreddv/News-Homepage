@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/images/logo.svg" alt="" class="logo__img" />
+      <nav>
+        <button class="opened">
+          <img src="images/images/icon-menu-close.svg" alt="" />
+        </button>
+        <button class="closed">
+          <img src="images/images/icon-menu.svg" alt="" />
+        </button>
+        <ul class="menu">
+          <li class="menu__item"><a href="#">Home</a></li>
+          <li class="menu__item"><a href="#">New</a></li>
+          <li class="menu__item"><a href="#">Popular</a></li>
+          <li class="menu__item"><a href="#">Trending</a></li>
+          <li class="menu__item"><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section1__container">
+        <picture>
+          <source
+            media="(min-width: 960px)"
+            srcset="images/images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="images/images/image-web-3-mobile.jpg"
+            alt=""
+            class="feature__img"
+          />
+        </picture>
+        <h1 class="feature__title">The Bright Future of Web 3.0?</h1>
+        <p class="feature__text">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <button class="feature__btn">READ MORE</button>
+      </section>
+      <section class="section2__container">
+        <h2 class="section2__header">New</h2>
+        <ul class="section2__list">
+          <li class="section2__list_item">
+            <h2 class="section2__title">Hydrogen VS Electric Cars</h2>
+            <p class="section2__text">
+              Read more Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </li>
+          <li class="section2__list_item">
+            <h2 class="section2__title">The Downsides of AI Artistry</h2>
+            <p class="section2__text">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </li>
+          <li class="section2__list_item">
+            <h2 class="section2__title">Is VC Funding Drying Up?</h2>
+            <p class="section2__text" id="vc_funding">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="section3__container">
+        <ul class="section3__list">
+          <li class="section3__list_item">
+            <img
+              src="images/images/image-retro-pcs.jpg"
+              alt=""
+              class="section3__img"
+            />
+            <div class="section3__list--info_container">
+              <h2 class="section3__list--number">01</h2>
+              <h3 class="section3__list--title">Reviving Retro PCs</h3>
+              <p class="section3__list--text">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </li>
+          <li class="section3__list_item">
+            <img
+              src="images/images/image-top-laptops.jpg"
+              alt=""
+              class="section3__img"
+            />
+            <div class="section3__list--info_container">
+              <h2 class="section3__list--number">02</h2>
+              <h3 class="section3__list--title">Top 10 Laptops of 2022</h3>
+              <p class="section3__list--text">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </li>
+          <li class="section3__list_item">
+            <img
+              src="images/images/image-gaming-growth.jpg"
+              alt=""
+              class="section3__img"
+            />
+            <div class="section3__list--info_container">
+              <h2 class="section3__list--number">03</h2>
+              <h3 class="section3__list--title">The Growth of Gaming</h3>
+              <p class="section3__list--text">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
