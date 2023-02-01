@@ -267,9 +267,13 @@ main {
         margin-top: 9rem;
     }
 
+    .section2__header {
+        font-size: 4rem ;
+    }
+
     .section3__container {
         grid-column: 1 / 4;
-        margin-top: 3rem;
+        margin-top: 4.1rem;
     }
 
     .section3__list {
