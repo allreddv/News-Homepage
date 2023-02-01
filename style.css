@@ -54,6 +54,11 @@ header {
     display: none;
 }
 
+.menu__item:hover, .section2__title:hover {
+    color: var(--Soft-orange);
+    transition: color 250ms;
+}
+
 main {
     padding: 0 1.6rem;
     
@@ -92,6 +97,11 @@ main {
     letter-spacing: .44rem;
     width: 18.5rem;
     height: 4.8rem;
+    transition: all 250ms;
+}
+
+.feature__btn:hover {
+    background-color: var(--Very-dark-blue);
 }
 
 .section2__container {
@@ -102,7 +112,7 @@ main {
 }
 
 .section2__header {
-    color: #E9AA52;
+    color: var(--Soft-orange);
     font-size: 3.2rem ;
     font-weight: 700;
 }
@@ -133,7 +143,7 @@ main {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-   
+
 .section3__container {
     margin-top: 6.4rem;
     display: flex;
@@ -142,9 +152,9 @@ main {
 }
 
 .section3__list {
-   display: flex;
-   flex-direction: column;
-   gap: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
 }
 
 .section3__list_item {
@@ -166,6 +176,11 @@ main {
     font-size: 1.8rem;
 }
 
+.section3__list--title:hover {
+    color: var(--Soft-red);
+    transition: color 250ms;
+}
+
 .section3__list--text {
     color: var(--gunmetal);
     font-weight: 400;
@@ -180,6 +195,26 @@ main {
 
 @media screen and (min-width: 960px  ) {
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo__img {
+        width: 6.4rem;
+        height: 4rem;
+    }
+
+    .menu {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .opened, .closed {
+        display: none
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -189,7 +224,7 @@ main {
     }
 
     .section1__container {
-      grid-column: 1 /3;
+        grid-column: 1 /3;
     }
 
 
@@ -198,16 +233,16 @@ main {
     }
 
     .feature__container {
-       display: grid;
-       grid-template-columns: 35rem 35rem;
-       gap: 3rem;
+        display: grid;
+        grid-template-columns: 35rem 35rem;
+        gap: 3rem;
     }
 
     .feature__title {
-       font-size: 5.6rem;
-       line-height: 5.6rem;
-       margin-top: 2.8rem;
-      
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+        margin-top: 2.8rem;
+    
     }
 
     .feature__text--container {
@@ -233,12 +268,14 @@ main {
 
     .section3__container {
         grid-column: 1 / 4;
+        margin-top: 3rem;
     }
 
     .section3__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 5rem;
+        /* gap: 3rem; */
+      
     }
     
 }
