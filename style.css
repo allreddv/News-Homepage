@@ -260,6 +260,7 @@ main {
 
     .section2__container {
         margin-top: 0;
+        padding: 3.2rem 2.4rem  ;
     }
 
     header {
@@ -273,7 +274,7 @@ main {
 
     .section3__container {
         grid-column: 1 / 4;
-        margin-top: 4.1rem;
+        margin-top: 4.3rem;
     }
 
     .section3__list {
