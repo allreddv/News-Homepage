@@ -44,6 +44,7 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 2.8rem 1.6rem 3.9rem;
+    position: relative;
 }
 
 .logo__img {
@@ -51,14 +52,72 @@ header {
     height: 2.8rem;
 }
 
+
+/* ----------Collapsing Mobile Menu Beginning----------------------- */
 .menu {
     display: none;
 }
+
+.menu__img { 
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 2.4rem;
+    right: 2rem;
+}
+
+.menu__collapse.opened {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem ;
+    width: 25rem;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--Off-white);
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transition: all 300ms ease-in-out;
+}
+
+.menu.opened {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem ;
+    padding-left: 2.4rem;
+    margin-top: 8.6rem;
+    transition: all 300ms ease-in-out;
+}
+
 
 .menu__item:hover, .section2__title:hover {
     color: var(--Soft-orange);
     transition: color 250ms;
 }
+
+
+.menu__btn.opened {
+    display: none;
+}
+
+
+
+.shader.opened {
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    opacity: 70%;
+    z-index: 1;
+    position: absolute;
+
+}
+
+.shader.closed {
+    display: none;
+}
+
+/* ----------Collapsing Mobile Menu End----------------------- */
+
 
 main {
     padding: 0 1.6rem;
@@ -212,7 +271,7 @@ main {
         gap: 4rem;
     }
 
-    .opened, .closed {
+   .menu__btn {
         display: none
     }
 

@@ -11,22 +11,29 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
+    <div aria-hidden="true" class="shader" id="shader"></div>
     <header>
       <img src="images/images/logo.svg" alt="" class="logo__img" />
       <nav>
-        <button class="opened">
-          <img src="images/images/icon-menu-close.svg" alt="" />
-        </button>
-        <button class="closed">
-          <img src="images/images/icon-menu.svg" alt="" />
-        </button>
-        <ul class="menu">
-          <li class="menu__item"><a href="#">Home</a></li>
-          <li class="menu__item"><a href="#">New</a></li>
-          <li class="menu__item"><a href="#">Popular</a></li>
-          <li class="menu__item"><a href="#">Trending</a></li>
-          <li class="menu__item"><a href="#">Categories</a></li>
-        </ul>
+        <div class="menu__collapse" id="menu_collapse">
+          <button class="menu__btn opened" id="menu_btn_close">
+            <img
+              src="images/images/icon-menu-close.svg"
+              alt=""
+              class="menu__img"
+            />
+          </button>
+          <button class="menu__btn" id="menu_btn_open">
+            <img src="images/images/icon-menu.svg" alt="" class="menu__img" />
+          </button>
+          <ul class="menu" id="menu_links">
+            <li class="menu__item"><a href="#">Home</a></li>
+            <li class="menu__item"><a href="#">New</a></li>
+            <li class="menu__item"><a href="#">Popular</a></li>
+            <li class="menu__item"><a href="#">Trending</a></li>
+            <li class="menu__item"><a href="#">Categories</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
