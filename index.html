@@ -13,27 +13,50 @@
   <body>
     <div aria-hidden="true" class="shader" id="shader"></div>
     <header>
-      <img src="images/images/logo.svg" alt="" class="logo__img" />
+      <img
+        src="images/images/logo.svg"
+        alt="W company logo"
+        class="logo__img"
+      />
       <nav>
         <div class="menu__collapse" id="menu_collapse">
-          <button class="menu__btn opened" id="menu_btn_close">
+          <button
+            class="menu__btn opened"
+            id="menu_btn_close"
+            title="Close dropdown nav menu"
+          >
             <img
               src="images/images/icon-menu-close.svg"
               alt=""
               class="menu__img"
             />
           </button>
-          <button class="menu__btn" id="menu_btn_open">
+          <button
+            class="menu__btn"
+            id="menu_btn_open"
+            title="Open dropdown nav menu"
+            aria-controls="menu_links"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
             <img src="images/images/icon-menu.svg" alt="" class="menu__img" />
           </button>
-          <ul role="list" class="menu" id="menu_links">
-            <li class="menu__item">
-              <a href="/">Home</a>
+          <ul role="menu" class="menu" id="menu_links">
+            <li class="menu__item" role="none" id="first_link">
+              <a href="/" role="menuitem">Home</a>
             </li>
-            <li class="menu__item"><a href="/">New</a></li>
-            <li class="menu__item"><a href="/">Popular</a></li>
-            <li class="menu__item"><a href="/">Trending</a></li>
-            <li class="menu__item"><a href="/">Categories</a></li>
+            <li class="menu__item" role="none">
+              <a href="/" role="menuitem">New</a>
+            </li>
+            <li class="menu__item" role="none">
+              <a href="/" role="menuitem">Popular</a>
+            </li>
+            <li class="menu__item" role="none">
+              <a href="/" role="menuitem">Trending</a>
+            </li>
+            <li class="menu__item" role="none">
+              <a href="/" role="menuitem">Categories</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -47,7 +70,7 @@
           />
           <img
             src="images/images/image-web-3-mobile.jpg"
-            alt=""
+            alt="Colorful array of various shapes"
             class="feature__img"
           />
         </picture>
@@ -100,7 +123,7 @@
           <li class="section3__list_item">
             <img
               src="images/images/image-retro-pcs.jpg"
-              alt=""
+              alt="Old first gen personal computers"
               class="section3__img"
             />
             <div class="section3__list--info_container">
@@ -116,7 +139,7 @@
           <li class="section3__list_item">
             <img
               src="images/images/image-top-laptops.jpg"
-              alt=""
+              alt="Modern laptop keyboard with red backlit keys"
               class="section3__img"
             />
             <div class="section3__list--info_container">
@@ -132,7 +155,7 @@
           <li class="section3__list_item">
             <img
               src="images/images/image-gaming-growth.jpg"
-              alt=""
+              alt="PS5 gaming controler"
               class="section3__img"
             />
             <div class="section3__list--info_container">
